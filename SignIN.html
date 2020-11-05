@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<form action="SignIN.php" method="post">
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+    </div>
+    <div>
+        <label for="password">Password:</label>
+        <input type="text" id="password" name="password" cols="10" rows="3">
+    </div>
+    <h3 style="margin: 0;">Are you moderator?</h3>
+    <select name="moderator" >
+        <option value="true" >YES</option>
+        <option value="false">NO</option>
+    </select> <br> <br>
+    <input type="submit" name="submit" value="submit">
+</form>
+</body>
+</html>

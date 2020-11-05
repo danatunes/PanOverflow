@@ -1,0 +1,70 @@
+.navbar{
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 100px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+    transition: width 400ms ease;
+}
+.navbar-nav{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    align-items:center;
+    height: 100vh;
+    position: fixed;
+}
+
+.nav-item:last-child{
+    margin-top: auto;
+}
+.nav-link{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: var(--text-primary);
+    text-decoration: none;
+}
+.link-text{
+    display: none;
+    margin-left: 1rem;
+    text-decoration: none;
+}
+
+.nav-link svg{
+    min-width: 2rem;
+    margin: 0 1.5rem;
+}
+.navbar:hover{
+    width: 16rem;
+}
+.navbar:hover .link-text{
+    display: block;
+}
+.fa-primary{
+    color: #ffcc00;
+}
+.fa-secondary{
+    color:#ffdd99;
+}
+.fa-primary,.fa-secondary{
+    transition: var(--transition-speed);
+}
+.main{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    width: 100%;
+    height: 100%;
+}
+.first{
+    margin-top: 30px;
+}

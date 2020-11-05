@@ -1,0 +1,31 @@
+<body>
+<form action="" method="GET" id="AddRECEPTS" class="job">
+    <div class="lfirst">
+        <h4>Add recepts</h4>
+    </div>
+    <div class="second">
+        <label for="image">Image:</label><br>
+        <input style="outline-style: double;" id="image" type="text" name="image">
+        <br>
+        <br>
+        <label for="title">Title:</label><br>
+        <input style="outline-style: double;" id="title" type="text" name="title">
+        <br>
+        <br>
+        <label for="content">Content:</label><br>
+        <textarea style="outline-style: double;" name="content" id="content" cols="30" rows="10"></textarea> <br>
+        <br>
+
+        <input type="submit" value="add" name="add" id="addrec">
+    </div>
+
+</form>
+<script src="js/ajax.js"></script>
+<script>
+
+    $(document).ready(function () {
+        $('#addrec').click(function () {
+            sendAjaxForm("AddRECEPTS","AddRECEPTS.php")
+        })
+    });
+</script>
